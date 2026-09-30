@@ -31,8 +31,8 @@ Demo: [calorietracker.thepuchadesproject.com](https://calorietracker.thepuchades
 
 As I work through the project, I plan to complete the following:
 
-- [ ] Initial setup and main layout with TailwindCSS.
-- [ ] Create and validate data entry forms.
+- [x] Initial setup and main layout with TailwindCSS.
+- [x] Create and validate data entry forms.
 - [ ] Full `useReducer` implementation.
 - [ ] Activity list with edit and delete options.
 - [ ] Summary components for consumed calories, burned calories, and the differential.
@@ -79,8 +79,8 @@ Demo: [calorietracker.thepuchadesproject.com](https://calorietracker.thepuchades
 
 A medida que avance en el proyecto, iré completando:
 
-- [ ] Configuración inicial y contenedores principales con TailwindCSS.
-- [ ] Creación y validación de formularios de entrada de datos.
+- [x] Configuración inicial y contenedores principales con TailwindCSS.
+- [x] Creación y validación de formularios de entrada de datos.
 - [ ] Implementación completa de `useReducer`.
 - [ ] Listado de actividades con opciones para editar y eliminar.
 - [ ] Componentes de resumen para calorías consumidas, quemadas y el diferencial.
