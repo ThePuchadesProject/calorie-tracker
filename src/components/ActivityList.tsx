@@ -32,12 +32,14 @@ export default function ActivityList({
         Food & Exercises
       </h2>
       {isEmptyActivities ? (
-        <p className="text-center my-5">There are no activities yet...</p>
+        <p className="text-center my-5">
+          There are no foods or exercises yet...
+        </p>
       ) : (
         activities.map((activity) => (
           <div
             key={activity.id}
-            className="px-5 py-10 bg-white mt-5 flex justify-between"
+            className="px-5 py-10 bg-white mt-5 flex justify-between shadow"
           >
             <div className="space-y-2 relative">
               <p

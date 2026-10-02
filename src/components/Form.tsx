@@ -54,6 +54,11 @@ export default function Form({ dispatch, state }: FormProps) {
     setActivity({ ...initialState, id: uuidv4() });
   };
 
+  const handleCancelEdit = () => {
+    dispatch({ type: "clear-activeId" });
+    setActivity({ ...initialState, id: uuidv4() });
+  };
+
   return (
     <form
       className="space-y-5 bg-white shadow p-10 rounded-lg"
@@ -113,6 +118,16 @@ export default function Form({ dispatch, state }: FormProps) {
         className="bg-gray-800 hover:bg-gray-900 w-full p-2 font-bold uppercase text-white cursor-pointer disabled:opacity-20"
         disabled={!isValidActivity()}
       />
+
+      {state.activeId && (
+        <button
+          type="button"
+          className="bg-slate-500 hover:bg-slate-600 w-full p-2 font-bold uppercase text-white cursor-pointer"
+          onClick={handleCancelEdit}
+        >
+          Cancel
+        </button>
+      )}
     </form>
   );
 }

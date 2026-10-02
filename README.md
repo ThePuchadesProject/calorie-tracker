@@ -35,8 +35,8 @@ As I work through the project, I plan to complete the following:
 - [x] Create and validate data entry forms.
 - [x] Full `useReducer` implementation.
 - [x] Activity list with edit and delete options.
-- [ ] Summary components for consumed calories, burned calories, and the differential.
-- [ ] Local storage persistence.
+- [x] Summary components for consumed calories, burned calories, and the differential.
+- [x] Local storage persistence.
 
 ### How to run it locally
 
@@ -83,8 +83,8 @@ A medida que avance en el proyecto, iré completando:
 - [x] Creación y validación de formularios de entrada de datos.
 - [x] Implementación completa de `useReducer`.
 - [x] Listado de actividades con opciones para editar y eliminar.
-- [ ] Componentes de resumen para calorías consumidas, quemadas y el diferencial.
-- [ ] Almacenamiento en `localStorage`.
+- [x] Componentes de resumen para calorías consumidas, quemadas y el diferencial.
+- [x] Almacenamiento en `localStorage`.
 
 ### Cómo ejecutarlo en local
 
