@@ -6,7 +6,7 @@
 
 ## English
 
-This is a practice project built with React, TypeScript, and TailwindCSS. It is a calorie and exercise tracker that allows users to log their meals and workouts, and monitor the difference between calories consumed and burned. This project focuses on using `useReducer` for advanced state management and `localStorage` for data persistence.
+This is a practice project built with React, TypeScript, and TailwindCSS. It is a calorie and exercise tracker that allows users to log their meals and workouts, and monitor the difference between calories consumed and burned. This project focuses on using `useReducer` combined with the **Context API** for global state management and `localStorage` for data persistence.
 
 Demo: [calorietracker.thepuchadesproject.com](https://calorietracker.thepuchadesproject.com)
 
@@ -17,7 +17,7 @@ Demo: [calorietracker.thepuchadesproject.com](https://calorietracker.thepuchades
 - Displays an activity list with edit and delete options.
 - Calculates and shows a summary of consumed calories, burned calories, and the total differential.
 - Persists all data using local storage.
-- Uses `useReducer` for clean and scalable state management instead of multiple `useState` hooks.
+- Uses `useReducer` alongside the **Context API** and a custom hook (`useActivity`) for clean, global state management without prop drilling.
 - Styled with TailwindCSS for a clean and responsive layout.
 
 ### Tech stack
@@ -37,6 +37,7 @@ As I work through the project, I plan to complete the following:
 - [x] Activity list with edit and delete options.
 - [x] Summary components for consumed calories, burned calories, and the differential.
 - [x] Local storage persistence.
+- [x] Context API integration and custom hook to avoid prop drilling.
 
 ### How to run it locally
 
@@ -54,7 +55,7 @@ As I work through the project, I plan to complete the following:
 
 ## Español
 
-Este es un proyecto de práctica desarrollado con React, TypeScript y TailwindCSS. Es un contador de calorías y ejercicios que permite a los usuarios registrar sus comidas y entrenamientos, y monitorizar la diferencia entre las calorías consumidas y quemadas. Este proyecto se centra en el uso de `useReducer` para la gestión avanzada del estado y `localStorage` para la persistencia de datos.
+Este es un proyecto de práctica desarrollado con React, TypeScript y TailwindCSS. Es un contador de calorías y ejercicios que permite a los usuarios registrar sus comidas y entrenamientos, y monitorizar la diferencia entre las calorías consumidas y quemadas. Este proyecto se centra en el uso de `useReducer` combinado con la **Context API** para la gestión global del estado y `localStorage` para la persistencia de datos.
 
 Demo: [calorietracker.thepuchadesproject.com](https://calorietracker.thepuchadesproject.com)
 
@@ -65,7 +66,7 @@ Demo: [calorietracker.thepuchadesproject.com](https://calorietracker.thepuchades
 - Muestra una lista de actividades con opciones para editar y eliminar.
 - Calcula y muestra un resumen de las calorías consumidas, quemadas y el diferencial total.
 - Persiste todos los datos utilizando localStorage.
-- Utiliza `useReducer` para una gestión del estado limpia y escalable en lugar de múltiples hooks `useState`.
+- Utiliza `useReducer` junto con la **Context API** y un custom hook (`useActivity`) para una gestión limpia del estado global sin prop drilling.
 - Interfaz maquetada con TailwindCSS, limpia y adaptada a móviles.
 
 ### Tecnologías utilizadas
@@ -85,6 +86,7 @@ A medida que avance en el proyecto, iré completando:
 - [x] Listado de actividades con opciones para editar y eliminar.
 - [x] Componentes de resumen para calorías consumidas, quemadas y el diferencial.
 - [x] Almacenamiento en `localStorage`.
+- [x] Integración de Context API y custom hook para evitar el prop drilling.
 
 ### Cómo ejecutarlo en local
 

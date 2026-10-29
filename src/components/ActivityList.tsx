@@ -1,31 +1,11 @@
-import type { Activity } from "../types";
-import type { ActionDispatch } from "react";
-import { useCallback, useMemo } from "react";
-import { categories } from "../data/categories";
 import { PencilSquareIcon, XCircleIcon } from "@heroicons/react/24/outline";
-import type { ActivityActions } from "../reducers/activity-reducer";
+import { useActivity } from "../hooks/useActivity";
 
-type ActivityListProps = {
-  activities: Activity[];
-  dispatch: ActionDispatch<[action: ActivityActions]>;
-};
+export default function ActivityList() {
+  const { state, dispatch, categoryName, isEmptyActivities } = useActivity();
 
-export default function ActivityList({
-  activities,
-  dispatch,
-}: ActivityListProps) {
-  const categoryName = useCallback(
-    (category: Activity["category"]) => {
-      const target = categories.find((cat) => cat.id === category);
-      return target ? target.name : "";
-    },
-    [], // [] significa que creo la función una sola vez al cargar el componente y nunca mas
-  );
+  const { activities } = state;
 
-  const isEmptyActivities = useMemo(
-    () => activities.length === 0,
-    [activities],
-  );
   return (
     <>
       <h2 className="text-4xl font-bold text-slate-600 text-center">
